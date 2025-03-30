@@ -27,7 +27,7 @@
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.15in}
- \addtolength{\textwidth}{0.3in}
+\addtolength{\textwidth}{0.3in}
 
 \urlstyle{same}
 
@@ -46,9 +46,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{0pt}}
-  }
+  \item\small{#1}
 }
 
 \newcommand{\classesList}[4]{
@@ -73,9 +71,9 @@
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & \small #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -85,119 +83,136 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-
 
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
-    {\Large \scshape Michael Scott} \\[2mm]
+    {\Large \scshape Gabriel Kuek} \\[2mm]
     \footnotesize \raisebox{-0.1\height}
-    \faPhone\ \underline{(123) 456-7890} ~ 
-    {\faEnvelope\  \underline{mscott@example.com}} ~ 
-    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/michael-scott/}{linkedin.com/in/michael-scott}}  ~
-    {\faGithub\ \underline{\href{https://github.com/m-scott}{github.com/m-scott}} ~
-    {\faBriefcase\ \underline{\href{https://mscott-portfolio.vercel.app/}{mscott-portfolio.vercel.app/}}
+    \faPhone\ \underline{(+65) 8268 8969} ~ 
+    {\faEnvelope\  \underline{kuekguanjiegabriel@gmail.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/michael-scott/}{linkedin.com/in/gabrielxkuek}}  ~
+    {\faGithub\ \underline{\href{https://github.com/m-scott}{github.com/gabrielxkuek}} ~
     \vspace{-8pt}
 \end{center}
 
- %-----------EDUCATION-----------
-\section{Education} \\[1mm]
+%-----------EXECUTIVE SUMMARY-----------
+\section{Executive Summary}
+  \resumeSubHeadingListStart
+    \resumeItemListStart
+        \resumeItem{Software Engineer with a passion for Web Development and experience in both front-end and back-end web development.}
+        \resumeItem{Demonstrated leadership ability through organizing a national software competition in collaboration with Apple, reaching 90+ participants from 20 secondary schools.}
+        \resumeItem{Strong foundation in full-stack web development with practical experience creating gamified applications, management platforms, and working with agile methodology through scrum.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University}{Expected Graduation: May 2026}
-      {Bachelor of Computer Engineering | Minor Artificial Intelligence
-      }{Location}
-  \resumeSubHeadingListEnd
+      {Singapore Polytechnic}{Expected Graduation: Apr 2026}
+      {Diploma in Information Technology | Minor in Data \& Artificial Intelligence}{Singapore}
     \resumeItemListStart
-        \resumeItem {Golden Key Honours Scholar | \textbf{GPA: 3.78}}
-        \vspace{-7pt}
-        \resumeItem {Courses: Software Engineering Practice, Applied Machine Learning, Operating Systems, Computer Architecture, Model-Based Programming, Algorithms and Data Structures, Intro. to Software Engineering}
+        \resumeItem{cGPA: \textbf{3.81} | Last Semester GPA: \textbf{3.91} | \textbf{CCA Gold with Honours}}
+        \resumeItem{Key Coursework: Full-Stack Development, CI/CD, Secure Coding, Agile, Database Management, Java Enterprise Applications, Machine Learning}
     \resumeItemListEnd
-    \vspace{-12pt}
-%-----------Experience---------------
-\section{Work Experience}
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------Technical Experience---------------
+\section{Technical Experience}
     \resumeSubHeadingListStart
-                \resumeSubheading{Tech Company}{May 2024 -- Sep 2024}{Machine Learning Engineer Intern}{Location} 
+            %-----------WORK-RELATED-----------
+            \resumeSubheading{Institute of Management Consultants (Singapore)}{Jan 2025 -- May 2025}{Fullstack Web Developer}{Singapore} 
                 \resumeItemListStart
-                    \resumeItem{Engineered \textbf{Large Language Models (LLMs)}, including \textbf{BERT} and \textbf{Attention Models}, to analyze software engineering requirements and generate accurate dependency lists, improving project planning efficiency by \textbf{37\%}}
-                    \resumeItem{Analyzed \textbf{1200+} software requirements monthly using \textbf{scikit-learn (classification models)}, \textbf{spaCy}, and \textbf{NLTK} in \textbf{Python}, saving the company \textbf{\$20,000 annually} by decreasing project lead times}
-                    \resumeItem{Integrated \textbf{TF-IDF vectorization} to detect similarities in software requirements, focusing on \textbf{preprocessing}, \textbf{model training}, \textbf{hyperparameter tuning} and \textbf{clustering} to optimize \textbf{NLP} analysis processes}
-                    \resumeItemListEnd
-            \resumeSubheading{Tech Company}{May 2023 -- Sep 2023}{Backend Engineer Intern}{Location} 
+                    \resumeItem{Engineered a \textbf{PDF export system} for dynamically generating form responses compliant with \textbf{BE Form legal documentation standards}}
+                    \resumeItem{Developed a \textbf{form versioning control system} reducing data inconsistencies}
+                    \resumeItem{Redesigned the organization management UX, enhancing workflow efficiency for \textbf{500+ users}}
+                    \resumeItem{Collaborated with a team of \textbf{14 developers} using \textbf{Scrum methodology} with \textbf{bi-weekly iterations}}
+                \resumeItemListEnd
+
+            %-----------PROJECTS-----------
+            \resumeProjectHeading
+                    {\textbf{AuthINC}}{Jun 2024 -- Dec 2024}
                 \resumeItemListStart
-                    \resumeItem{Designed \textbf{30+ AWS Lambda Functions}, strategically leveraging \textbf{Lambda layers} to increase processing speed by \textbf{35\%} and re-usability by \textbf{52\%}, resulting in cost savings of \textbf{\$1,000} per large scale deployment}
-                    \resumeItem{Implemented \textbf{15+} server less workflows using \textbf{AWS Step Functions}, seamlessly integrating \textbf{REST APIs} and rigorously tested with \textbf{Postman},  resulting in a \textbf{65\%} reduction in execution time and enhanced operational efficiency}
-                    \resumeItem{Crafted a \textbf{Spring Boot} application with a \textbf{Drools} logic engine, containerized it using \textbf{Docker}, and seamlessly deployed it on \textbf{AWS} using \textbf{EC2}, strategically allocating cloud resources to ensure enhanced scalability and reliability}
-                    \resumeItemListEnd
-            \resumeSubheading{Tech Company}{Jun 2022 -- Sep 2022}{Software Engineer Intern}{Location}
-                \resumeItemListStart
-                    \resumeItem{Programmed and deployed a \textbf{Python}-based data migration pipeline on \textbf{Azure}, achieving a \textbf{50\% reduction} in transfer time for \textbf{100+ terabytes} of critical business data}
-                    \resumeItem{Centralized a \textbf{SQL} database infrastructure on \textbf{Azure}, enhancing data accessibility and security for \textbf{50+ stakeholders}, resulting in a \textbf{30\% improvement} in query performance across the organization}
-                    \resumeItemListEnd
+                    \resumeItem{Developed a \textbf{file compression tool} using \textbf{Cloudinary} and \textbf{Multer}, reducing file sizes by up to \textbf{80\%}}
+                    \resumeItem{Implemented a \textbf{real-time logs monitoring system} for tracking API calls and user interactions}
+                    \resumeItem{Collaborated with a team of \textbf{29 developers} using \textbf{Github} and \textbf{CICD Pipeline} in this intensive academic simulation}
+                \resumeItemListEnd
+                
+            \resumeProjectHeading
+                    {\textbf{{EmpowerMWH}} $|$ \emph{\href{https://mwh-minimart-system.vercel.app/}{Website}{ $|$ }\href{https://github.com/GabrielxKuek/mwh-minimart-system}{Source Code}}}{ReactJS $|$ ExpressJS $|$ Firebase}
+                  \resumeItemListStart
+                    \resumeItem{Designed and Built gamified task management system with \textbf{scalable architecture} for \textbf{Muhammadiyah Welfare Home}, serving \textbf{over 39 troubled youth}}
+                  \resumeItemListEnd
+                  
+            \resumeProjectHeading
+                    {\textbf{ConTrack} $|$ \emph{\href{https://contrackapp.vercel.app/}{Website}{ $|$ }\href{https://github.com/calvinseptyanto/ibmgranite}{Source Code}}}{ReactJS $|$ Supabase $|$ Flask $|$ IBMGranite}
+                  \resumeItemListStart
+                    \resumeItem{Engineered a robust document collaboration system with state management, sharable links, and efficient PDF processing pipeline}
+                  \resumeItemListEnd
+                  
+            \resumeProjectHeading
+                {\textbf{Rehabify} (Startup)}{ReactJS $|$ ExpressJS $|$ Firebase $|$ PostgreSQL $|$ MediaPipe}
+              \resumeItemListStart
+                \resumeItem{Co-founded platform that translates physiotherapy exercises into game controls; led pitch presentations while building authentication system and hand-tracking piano game among other features}
+              \resumeItemListEnd
     \resumeSubHeadingListEnd
-    \vspace{-12pt}
+\vspace{-16pt}
 
-%-----------PROJECTS-----------
-\section{Projects} 
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-            {\textbf{{McGill Scheduler}} $|$ \emph{\href{https://mcgillscheduler.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/McGill-Scheduler}{Source Code}}}{ReactJS $|$ Spring Boot $|$ PostgreSQL}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{Developed and deployed a full-stack web application that enhanced academic experiences of \textbf{1,000+ McGill students}}
-            \resumeItem{Utilized \textbf{PostgreSQL} for data storage, \textbf{Spring Boot} for a \textbf{RESTful API} backend, and \textbf{ReactJS} for the user interface}
-          \resumeItemListEnd
- \vspace{-20pt}
- \resumeProjectHeading
-            {\textbf{{Empor}} $|$ \emph{\href{https://empor.ca/}{Website}}}{NextJS $|$ TypeScript $|$ Spring Boot}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{\textbf{Led the development} of a full-stack marketplace application for \textbf{1,000+ university students}, utilizing \textbf{NextJS} and \textbf{TypeScript} for the frontend, \textbf{Prisma} as the ORM, \textbf{Supabase} for the database, and a \textbf{Spring Boot} backend}
-          \resumeItemListEnd
- \vspace{-17pt}
- \resumeProjectHeading
-{\textbf{{Premier League Match Predictor}} $|$ \emph{\href{https://premierzone.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/PLWebsite}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Python}
-\\[5mm]
-\resumeItemListStart
-\resumeItem{Created a model to predict matches, integrating \textbf{data scraping} with \textbf{pandas} and \textbf{machine learning} with \textbf{scikit-learn}}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-\vspace{-28pt}
 %-----------LEADERSHIP-----------
-\section{Leadership} 
-    \vspace{-5pt}
+\section{Volunteer \& Leadership}
     \resumeSubHeadingListStart
-                   \resumeProjectHeading
-            {\textbf{{SWErikCodes}} $|$\emph{{\href{https://www.tiktok.com/@swerikcodes?lang=en}{ TikTok $|$}\href{https://www.youtube.com/channel/UCgKFOz_KrMbmypWrawtzDQg}{ YouTube $|$}\href{https://www.instagram.com/swerikcodes/}{ Instagram}}}}{Jun 2023 -- Present}
-            \\[5mm]
-          \resumeItemListStart
-            \resumeItem{Created educational coding content for \textbf{75,000+} developers, with \textbf{4,200,000+} impressions per month}
-            \resumeItem{Produced coding tutorials on advanced topics such as \textbf{data structures}, \textbf{algorithms}, and \textbf{software design principles}}
-          \resumeItemListEnd
-          \resumeSubHeadingListEnd
- \vspace{-12pt}
-  %-----------PROGRAMMING SKILLS-----------
+        \resumeSubheading
+            {Apple Developers' Society (Singapore Polytechnic)}{Mar 2024 -- Mar 2025}
+            {Founding Member \& Operations Lead}{Singapore}
+            \resumeItemListStart
+                \resumeItem{Spearheaded a national software competition, collaborating with \textbf{Apple},  reaching \textbf{90+ participants} from \textbf{20 secondary schools}}
+                \resumeItem{Planned Swift bootcamps and workshops for students with limited coding experience}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {Community Service and Cultural Club (Singapore Polytechnic)}{Apr 2023 -- Jan 2024}
+            {Subcommittee Member - Welfare}{Singapore}
+            \resumeItemListStart
+                \resumeItem{Collaborated with National Kidney Foundation organizing events for dialysis patients}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------AWARDS-----------
+\section{Awards}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Youth Action Challenge \& NTU Kumar Sustainability Prize}{2024 -- 2025}
+            {\$5,000 Grant Recipient \& KSIP Finalist (Top 10)}{Singapore}
+            \resumeItemListStart
+                \resumeItem{Secured \textbf{\$5,000 funding} for \textbf{Rehabify} and reached finals in KSIP competition with \textbf{\$50,000 grand prize}}
+            \resumeItemListEnd
+            
+        \resumeSubheading
+            {Hackathon Achievements}{2023 -- 2024}
+            {Multiple Award-Winning Projects}{Singapore}
+            \resumeItemListStart
+                \resumeItem{\textbf{NUS Hack4Good}: 1st Place (2024) | \textbf{SimplifyNext RPA}: 1st Place (2024) | \textbf{MindfulHacks}: Finalist (2023)}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{   
-     \textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, Go, C, VHDL} \\[1mm]
-     \textbf{Developer Tools}{: AWS, Postman, PowerBI, Git, Azure, Docker, Jira} \\[1mm]
-     \textbf{Libraries/Frameworks}{: Spring Boot, ReactJS, PostgreSQL, NextJS, VueJS, NodeJS} \\ [1mm]
+     \textbf{Languages}{: \textbf{JavaScript} (primary), Swift, Python, Java, SQL, HTML5, CSS} \\[1mm]
+     \textbf{Developer Tools}{: Postman, AWS, Azure, Git, Firebase, Supabase, Docker} \\[1mm]
+     \textbf{Libraries/Frameworks}{: ReactJS, NodeJS, ExpressJS, Spring Boot, PostgreSQL} \\ [1mm]
     }}
  \end{itemize}
- \vspace{-16pt}
- \vspace{3pt}
-\vspace{10pt}
-
-\vspace{-15pt}
-
-
+\vspace{-16pt}
 
 \end{document}

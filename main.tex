@@ -70,11 +70,10 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[4]{
+\newcommand{\resumeProjectHeading}[2]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\ % Project name | Date
-      \textit{\small #3} & \small #4 \\   % Tech stack | Links
+      #1 & \textbf{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -106,7 +105,8 @@
 \section{Executive Summary}
   \resumeSubHeadingListStart
     \resumeItemListStart
-        \resumeItem{\textbf{Full-stack Software Engineer} with hands-on experience in JavaScript, ReactJS, ExpressJS, and PostgreSQL through personal projects, and \textbf{demonstrated leadership} by organizing an Apple-endorsed application development competition engaging 90+ students from 20+ institutions}
+        \resumeItem{\textbf{Full-stack Software Engineer} with hands-on experience in JavaScript, ReactJS, ExpressJS, and PostgreSQL, demonstrated through personal projects including a fullstack incentivized activity tracking platform with reward mechanics.}
+        \resumeItem{\textbf{Demonstrated leadership} by organizing an application development competition endorsed by Apple, engaging over 90 students from 20+ educational institutions.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 \vspace{-16pt}
@@ -128,11 +128,13 @@
 \section{Technical Experience}
     \resumeSubHeadingListStart
             %-----------WORK-RELATED-----------
-            \resumeProjectHeading
-                {Institute of Management Consultants (Singapore)}
-                {Jan 2025 -- Aug 2025}
-                {ReactJS, ExpressJS, PostgreSQL}
-                {\href{https://www.youtube.com/watch?v=1SOSWwROc7c}{\textt{\underline{Demo}}}}
+            \resumeSubheading{National Computer Systems (NCS Group)}{Sep 2025 - Feb 2026}{Software Engineer Intern}{Singapore} 
+                \resumeItemListStart
+                    \resumeItem{Created a \textbf{dependency check script} for automatically checking dependencies in existing repositories, \textbf{reducing the need for manual checking by 80\%}}
+                    \resumeItem{Diagnosed and resolved a critical data export bug, enhancing reliability and accuracy of Excel-based reporting \textbf{across all responsible administrative users.}}
+                \resumeItemListEnd
+                
+            \resumeSubheading{Institute of Management Consultants (Singapore)}{Jan 2025 -- Aug 2025}{Fullstack Web Developer}{Singapore} 
                 \resumeItemListStart
                     \resumeItem{Engineered a \textbf{PDF export system} for dynamically generating form responses compliant with 100\% of \textbf{BE Form legal documentation standards}}
                     \resumeItem{Developed a \textbf{form versioning control system}, reducing the need for manual tracking by 80\%}
@@ -140,45 +142,30 @@
                     \resumeItem{Coordinated with a team of \textbf{14 developers}, implementing \textbf{Agile principles} through bi-weekly sprints, daily standups, retrospectives, and continuous delivery}
                 \resumeItemListEnd
 
-            %-----------PROJECTS-----------
+            %-----------PROJECTS-----------                
             \resumeProjectHeading
-                {AuthINC}
-                {Jun 2024 -- Dec 2024}
-                {ReactJS, ExpressJS, PostgreSQL}
-                {}
+                    {\textbf{AuthINC}}{Jun 2024 -- Dec 2024}
                 \resumeItemListStart
-                    \resumeItem{Collaborated with a team of \textbf{29 developers}, utilizing \textbf{Git} and \textbf{CI/CD Pipeline} to develop a \textbf{file compression tool} using \textbf{Cloudinary} and \textbf{Multer}, reducing file sizes by up to \textbf{80\%}}
-                    \resumeItem{Architected a \textbf{comprehensive logging and analytics system} using a cron job to periodically perform IP geolocation analysis on thousands of API calls every hour, connecting to Gmail to provide alerts for automated security monitoring}
+                    \resumeItem{Developed a \textbf{file compression tool} using \textbf{Cloudinary} and \textbf{Multer}, reducing file sizes by up to \textbf{80\%}}
+                    \resumeItem{Implemented a \textbf{real-time logs monitoring and alert system} for tracking all API calls and user interactions made over the span of 7 months, across the entire webapp}
+                    \resumeItem{Orchestrated with a team of \textbf{29 developers}, utilizing \textbf{Git} and \textbf{CICD Pipeline}}
                 \resumeItemListEnd
                 
             \resumeProjectHeading
-                {EmpowerMWH}
-                {Jan 2025}
-                {ReactJS, ExpressJS, Firebase}
-                {\href{https://www.youtube.com/watch?v=c_-i1OlLHHE}{\textt{\underline{Demo}}} \;|\; \href{https://github.com/GabrielxKuek/mwh-minimart-system}{\textt{\underline{Source Code}}}}
-                \resumeItemListStart
+                    {\textbf{{EmpowerMWH}} $|$ \emph{\href{https://www.youtube.com/watch?v=c_-i1OlLHHE}{Demo}}}{ReactJS $|$ ExpressJS $|$ Firebase}
+                  \resumeItemListStart
                     \resumeItem{Pioneered a gamified task management and reward system with a \textbf{scalable, component-based architecture} following the \textbf{Model-View-Controller} pattern for \textbf{Muhammadiyah Welfare Home}, housing \textbf{over 39 troubled youth}.}
-                \resumeItemListEnd
+                    
+                    \resumeItem{Rolled out a full-stack web platform supporting daily use by youth residents, improving access to program resources and \text{reducing manual coordination by 80\%}}
+                  \resumeItemListEnd
                   
             \resumeProjectHeading
-                {ConTrack}
-                {Feb 2025}
-                {ReactJS, Supabase, Flask, IBM Granite}
-                {\href{https://lablab.ai/event/generative-ai-hackathon-with-ibm-granite/hawk-tuah-reborn/contrack}{\textt{\underline{Demo}}} \;|\; \href{https://github.com/calvinseptyanto/ibmgranite}{\textt{\underline{Source Code}}}}
-                \resumeItemListStart
-                    \resumeItem{Constructed a document collaboration webapp featuring React-based state management, secure sharable links, and an optimized PDF processing pipeline, while supporting \textbf{100+ concurrent users}}
-                \resumeItemListEnd
-                  
-            \resumeProjectHeading
-                {\href{https://rehabify.co}{\textt{\underline{Rehabify}}}}
-                {Jan 2025 -- Ongoing}
-                {Startup Project}
-                {\href{https://www.youtube.com/watch?v=rg0DGuQf09E}{{\textt{\underline{Demo}}}}}
-                \resumeItemListStart
-                    \resumeItem{Co-founded platform that translates  movements exercises into game controls}
-                    \resumeItem{Delivered pitch presentations at multiple competitions, advancing to the finals and securing over \$30,000 in seed funding for Rehabify.}
-                    \resumeItem{Conducted weekly sessions with Lions Befrienders and Red Cross Singapore to encourage active ageing in elderly}
-                \resumeItemListEnd
+                {\textbf{Rehabify} $|$ \emph{\href{https://www.youtube.com/watch?v=rg0DGuQf09E}{Demo}} $|$ \emph{\href{https://rehabify.co}{Website}}}{ReactJS $|$ ExpressJS $|$ Firebase $|$ PostgreSQL $|$ MediaPipe}
+              \resumeItemListStart
+                \resumeItem{Co-founded platform that translates physiotherapy exercises into game controls, available on App Store, Play Store, and Windows}
+                \resumeItem{Delivered pitch presentations at multiple competitions, advancing to the finals and securing over \$5,000 in funding for Rehabify.} 
+                \resumeItem{Engineered authentication system and worked closely with active ageing centres like Lions' Befrienders and Red Cross Singapore, continuously iterating based on user feedback, \textbf{improving elderly physical activity by over 60\%}}
+              \resumeItemListEnd
     \resumeSubHeadingListEnd
 \vspace{-16pt}
 
@@ -186,16 +173,16 @@
 \section{Volunteer \& Leadership}
     \resumeSubHeadingListStart
         \resumeSubheading
-            {Apple Developers' Society}{Mar 2024 -- Mar 2025}
-            {Founding Member \& Operations Lead}{Singapore Polytechnic}
+            {Apple Developers' Society (Singapore Polytechnic)}{Mar 2024 -- Mar 2025}
+            {Founding Member \& Operations Lead}{Singapore}
             \resumeItemListStart
-                \resumeItem{Initiated a national software competition in collaboration with Apple, attracting \textbf{90+ voluntary contestants} spanning \textbf{20 different secondary schools}}
+                \resumeItem{Spearheaded a national software competition in collaboration with Apple, attracting \textbf{90+ voluntary contestants} spanning \textbf{20 different secondary schools}}
                 \resumeItem{Planned in-depth Swift App Development bootcamps and workshops for polytechnic and secondary students with limited coding experience, amounting to combined total of \textbf{100+ students}}
             \resumeItemListEnd
             
         \resumeSubheading
-            {Community Service and Cultural Club}{Apr 2023 -- Jan 2024}
-            {Subcommittee Member - Welfare}{Singapore Polytechnic}
+            {Community Service and Cultural Club (Singapore Polytechnic)}{Apr 2023 -- Jan 2024}
+            {Subcommittee Member - Welfare}{Singapore}
             \resumeItemListStart
                 \resumeItem{Organized a community engagement event with National Kidney Foundation, improving quality of life for 50+ dialysis patients through welfare activities}
             \resumeItemListEnd
@@ -207,7 +194,7 @@
     \resumeSubHeadingListStart
         \resumeSubheading
             {Youth Action Challenge \& Batey Challenge \& NTU Kumar Sustainability Prize}{2024 -- 2025}
-            {\$15,000 Grant Recipient \& Gold Award Recipient \& KSIP Finalist (Top 10)}{Singapore}
+            {\$15,000 Grant Recipient \& Gold Award Recipient \& KSIP Finalist}{Singapore}
             \resumeItemListStart
                 \resumeItem{Secured over \textbf{\$30,000} of seed funding for Rehabify through competitive pitch presentation and business plan development, advancing to finals (top 10) in KSIP competition with \$50,000 grand prize}
             \resumeItemListEnd
@@ -218,6 +205,8 @@
             \resumeItemListStart
                 \resumeItem{\textbf{NUS Hack4Good}: 1st Place (2025) |
                 \textbf{Dell InnovateDash}: 1st Runner-Up (2025) |
+                \textbf{NCS AI League}: 2nd Runner-Up (2025) |
+                \textbf{NES Ground Zero}: Best Presentation (2025) |
                 \textbf{SimplifyNext RPA}: 1st Place (2024) | \textbf{MindfulHacks}: Finalist (2023)}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
@@ -227,12 +216,13 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{   
-     \textbf{Languages \& Web Technologies}{: JavaScript (primary), Python, Swift, Java, SQL, HTML5, CSS} \\[1mm]
-     \textbf{Frameworks}{: ReactJS, NodeJS, ExpressJS, Spring Boot, Flask} \\[1mm]
-     \textbf{Databases \& Cloud}{: PostgreSQL, Firebase, Supabase, AWS, Azure} \\[1mm]
-     \textbf{Tools \& Methodologies}{: Git, Postman, Docker, Agile, Scrum, CI/CD, ORM} \\
+     \textbf{Languages}{: \textbf{JavaScript} (primary), Swift, Python, Java, SQL, HTML5, CSS} \\[1mm]
+     \textbf{Developer Tools}{: Postman, AWS, Azure, Git, Firebase, Supabase, Docker} \\[1mm]
+     \textbf{Libraries/Frameworks}{: ReactJS, NodeJS, ExpressJS, Prisma, Spring Boot, PostgreSQL} \\ [1mm]
+     \textbf{Methodologies}{: Agile, Scrum, Kanban, Test-Driven Development, CI/CD} \\ [1mm]
     }}
  \end{itemize}
+\vspace{-16pt}
 
 %-----------REFERENCES-----------
 \section{References}
